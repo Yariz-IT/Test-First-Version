@@ -1,0 +1,117 @@
+.quiz {
+    min-height: 400px;
+    width: 500px;
+    padding: 32px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(204, 233, 233);
+    background: linear-gradient(to left bottom, #961263, #0a6ba3, #45046b);
+}
+
+.quiz__title {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.quiz__progress-wrap {
+    display: flex;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-bottom: 64px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.quiz__progress {
+    height: 16px;
+    border-radius: 16px;
+    flex-grow: 1;
+    background-color: #261653;
+    border: 1px solid;
+    margin-right: 16px;
+    position: relative;
+}
+
+.quiz__progress-fill {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-radius: 16px;
+    background: linear-gradient(to left bottom, #961263, #267fb3);
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.quiz__questions-progress {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.quiz__questions-progress strong {
+    font-weight: 700;
+    opacity: 0.6;
+}
+
+.quiz__questions-progress *:not(:last-child) {
+    margin-right: 2px;
+}
+
+.quiz__question {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.quiz__answers {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    border-radius: 16px;
+}
+
+.quiz__answer {
+    padding: 8px 16px;
+    background: rgba(26, 19, 19, 0.3);
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.quiz__answer:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.quiz__btn {
+    color: azure;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 24px auto 0;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.quiz__result {
+    text-align: center;
+    flex-grow: 1;
+    display: none;
+    font-weight: 400;
+    margin-bottom: 50px;
+    
+}
+.quiz__finish {
+    font-size: 100px;
+}
+
+.quiz__info {
+    font-size: 30px;
+    margin-top: 5px;
+}
+

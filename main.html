@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+    <div class="quiz">
+        <div class="quiz__title" id="title"></div>
+        <div class="quiz__progress-wrap">
+            <div class="quiz__progress">
+                <div id="progress-fill" class="quiz__progress-fill"></div>
+            </div>
+
+            <div class="quiz__questions-progress">
+                <strong id="question-number"></strong>
+                <span>/</span>
+                <span id="total-questions"></span>
+            </div>
+
+        </div>
+        <div class="quiz__question" id="question-wrap">
+            <strong id="question-position"></strong>
+            <span id="question"></span>
+        </div>
+
+        <div id="answers" class="quiz__answers">
+            <div class="quiz__answer active"></div>
+            <div class="quiz__answer inactive"></div>
+            <div class="quiz__answer"></div>
+        </div>
+
+        <div class="quiz__btn" id="next"> Следующий вопрос</div>
+        <div class="quiz__result" id="result">
+            <div class="quiz__finish">🎊</div>
+            <div class="quiz__info">
+                <span>Верных ответов</span><br />
+                <span class="total" id="active-answers">0</span>
+
+                <span>из</span>
+                <span class="total" id="total-result">3</span>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/renderProgress.js"></script>
+    <script src="/js/buttonDisabled.js"></script>
+    <script src="/js/renderQuestion.js"></script>
+    <script src="/js/answerToQuestion.js"></script>
+    <script src="/js/renderAnswers.js"></script>
+    <script src="/js/renderTest.js"></script>
+    <script src="/js/renderResults.js"></script>
+    <script src="/js/changeButtonResult.js"></script>
+    <script src="/js/checkAnswers.js"></script>
+
+
+</body>
+
+</html>

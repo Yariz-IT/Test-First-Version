@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
+@import '/css/quiz.css';
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left bottom, #831e34, #113764);
+}
+
+.active {
+    position: relative;
+    background: linear-gradient(to left bottom, #db389d, #320acf);
+    border: 1px solid #635959;
+    padding-right: calc(28) + 16px;
+    pointer-events: none;
+
+}
+
+.inactive {
+    position: relative;
+    background: linear-gradient(to left bottom, #b82646, #113764);
+    border: 1px solid #635959;
+    padding-right: calc(28) + 16px;
+}
+
+.active::after,
+.inactive::after {
+    position: absolute;
+    content: '\2713';
+    top: 50%;
+    right: 5px;
+    display: block;
+    height: 20px;
+    border-radius: 20px;
+    width: 20px;
+    background: linear-gradient(to left bottom, #a3126c, #450868);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc(28px / -2.2);
+}
+
+.inactive::after {
+    content: '\2715';
+    background: #520818;
+}
+
+.button_inactive {
+    opacity: 0.5;
+    pointer-events: none;
+  
+}
+
+.total {
+    font-size: 50px;
+    font-weight: 600;
+}
